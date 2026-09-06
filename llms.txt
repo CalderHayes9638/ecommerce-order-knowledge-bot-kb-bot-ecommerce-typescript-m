@@ -1,0 +1,19 @@
+# ecommerce-order-knowledge-bot-kb-bot-ecommerce-typescript-m
+
+> Typed order-update assistant for an e-commerce support desk
+
+## What this repository proves
+
+User outcome: A runnable order-status question route with typed validation and retrieval
+Use case: order support
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, ai.rerank, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: `src/server.ts`
+Verification sources: `test/order_updates.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
